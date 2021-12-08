@@ -1,0 +1,441 @@
+@import url('https://use.typekit.net/dnh4vch.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: brothers, sans-serif;
+    /* text-shadow:2px 2px 2px rgb(77, 76, 76); */
+}
+
+body {
+    margin-left: 80px;
+    margin-top: 80px;
+    /* background-image: url(/imagenes/mad.jpg); */
+    
+    transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #F5EEDC;
+}
+
+/* Sobre nosotros, titulo, parrafo e imagen */
+.nos{
+    margin-left: 250px;
+    color: #FEE440;
+    text-shadow:2px 2px 2px rgb(77, 76, 76);
+}
+p{
+    margin-left: 55px;
+    justify-content: center;
+    height: 150px;
+    width: 600px;
+    float: left;
+    color: #E1E8EB;
+    font-size: 15px;
+    line-height: 1,7;
+    text-align: center;
+    font-weight: lighter;
+    /* text-shadow:2px 2px 2px rgb(77, 76, 76); */
+}
+.text-nos{
+    text-shadow:2px 2px 2px rgb(77, 76, 76);
+}
+.imagen{
+    position: relative;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70vh;
+    float: right;
+    margin-right: 50px;
+    box-shadow: 6px 8px 5px  rgb(77, 76, 76);
+    border-radius: 5%;
+    
+}
+main{
+    padding: 20px;
+}
+/*imagen de productos */
+.foto1{
+    position: relative;
+    height:50%;
+    width:100%;
+    background-image: url(/imagenes/canillasBN.jpg); 
+    background-color: rgb(50, 50, 50);
+    background-blend-mode: soft-light;
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 95%;
+    /* text-shadow:2px 2px 2px rgb(12, 11, 11); */
+    
+}
+
+.cab{
+        height: 50vh;
+        width: 100%;
+        background-image: url(/imagenes/home.jpg);
+        background-color: rgb(50, 50, 50);
+        background-blend-mode: soft-light;
+        padding: 1px;
+        color: #F5EEDC;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+}
+
+/* encabezado */
+header {
+    width: 100%;
+    height: 80px;
+    /* background: rgba(110, 107, 100, 0); */
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    
+}
+
+/*: Tamaño, movible(display), centrado, mover al costado(transform) */
+.icon__menu {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(10px);
+    margin-top: 35px;
+}
+
+/* posicion iconos */
+.icon__menu i {
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+}
+
+/* Movimiento menu */
+.menu__side {
+    width: 90px;
+    height: 100%;
+    background: #474b4e;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #F5EEDC;
+    font-size: 12px;
+    z-index: 300;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-right: 20px solid #474b4e;
+    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/* Ocultar Scrool para chrome, zafari y opera */
+.menu__side::-webkit-scrollbar {
+    display: none;
+}
+
+/* ocultar scrol para ie, edge y firefox */
+.menu__side {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Cambios dentro del menu */
+.name__page {
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* x2 */
+.name__page i {
+    width: 20px;
+    margin-right: 20px;
+}
+
+/* opciones menu */
+.options__menu {
+    padding: 20px 30px;
+    position: absolute;
+    top: 80px;
+}
+
+.options__menu a {
+    color: black;
+    cursor: default;
+    display: block;
+    position: relative;
+    transition: color 300ms;
+}
+
+/* color transicion */
+.options__menu a:hover {
+    color: #F4E185;
+}
+
+.options__menu .options {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.options__menu .options i {
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.options__menu .options h4 {
+    font-weight: 300;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+a.selected {
+    color: rgb(219, 212, 212);
+    
+}
+
+.selected:before {
+    content: '';
+    width: 314px;
+    height: 57%;
+    background: rgb(1, 0, 6);
+    background: #333333;
+    position: absolute;
+    top: 18%;
+    left: -30px;
+    
+}
+
+.social {
+    position: fixed;
+    left: 30px;
+    top: 330px;
+    z-index: 20000;
+}
+
+.social ul {
+    list-style: none;
+}
+
+.social ul li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin: 8px 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+    background: #333333;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    margin-left: -15px;
+}
+
+.social ul li a:hover {
+    background: #fee540a9;
+    padding: 0;
+}
+
+/* clases para usar en js */
+.body_move {
+    margin-left: 250px;
+}
+
+.menu__side_move {
+    width: 250px;
+}
+
+h1 {
+    margin-left: 120px;
+}
+
+p {
+    margin-left: 20px;
+    justify-content: center;
+    height: 150px;
+    width: 600px;
+}
+.nata{
+    width: 30%;
+    justify-content: center;
+    margin-left:450px;
+    margin-top: 100px;
+}
+sub{
+    color: #FEE440;
+    margin-left: -107px;
+}
+h2{
+    margin-top:10px;
+    margin-left: 18px
+}
+
+/*carrito de compras */
+/* .grid-container-item2{
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(10px);
+    margin-top: 35px;;
+}
+#carrito{
+    font-size: 40px;
+    margin-left:2200px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; */
+/* } */
+
+/* slider imagenes */
+
+.container {
+    width: 90%;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider{
+    padding: 0;
+}
+
+.slider__container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    gap: 1em;
+    /* opacity: 200px; */
+}
+.slider__body{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    pointer-events: none;
+    display:flex;
+    grid-template-columns: 2fr max-content;
+    align-items: center;
+    transition: 1.5s;
+    opacity:0;
+}
+
+.slider__body--show{
+    opacity:1;
+    pointer-events: unset;
+}
+
+.slider__texts{
+    max-width:unset 600px;
+    color: #F5EEDC;
+    text-align: center;
+}
+
+.subtitle{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: justify; 
+    margin-left: 42px;
+    
+    /* justify-content: justify , arriba en donde dice text ponele justify el font size bajale a 1.5 rem */
+}
+
+.slider__review{
+    font-size: 15px;
+    line-height: 1;
+    text-align: justify;
+    font-weight: lighter;
+    margin-left: 125px;
+    color: #F5EEDC;
+}
+
+.slider__img{
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* width: 230px;
+    height:300px; */
+    width: 155px;
+    height: 206px;
+    border-radius: 10%;
+    display:block;
+    margin:0 auto;
+    opacity:90%;
+    margin-left: 109px;
+    box-shadow: 6px 8px 5px  rgb(77, 76, 76);
+
+}
+.slider__arrow{
+    cursor: pointer;
+    width: 90%;
+}
+
+.slider__arrow:nth-of-type(2){
+    justify-self: end;
+}
+sub{
+    margin-left: 50px;
+}
+
+@media (max-width:768px){
+    .slider__body{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        gap: 1em;
+    }
+    .slider__picture{
+        grid-row: 1/2;
+    }
+    .slider__img{
+        width:210px;
+        height:210px;
+    }
+}
+
+@media (max-width:425px){
+    .slider__container{
+        grid-template-columns: 25px 1fr 25px;
+        
+    }
+    .slider__arrow{
+        width:100%;
+
+    }
+    .slider__img{
+        width: 180px;
+        height: 180px;
+    }
+    .subtitle{
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    .slider__review{
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
